@@ -1,1 +1,30 @@
-<p>question works!</p>
+
+<h1>{{ topic }}</h1>
+
+<div class="po-row po-mb-4">
+    <po-divider class="po-md-12" p-label="Pergunta"></po-divider>
+    <p> {{ question }}</p>
+</div>
+
+<div class="po-row po-mb-4">
+    <po-divider class="po-md-12" p-label="Opções"></po-divider>
+    <div class="po-row po-mb-4" *ngFor="let answer of answers">
+        <p>{{ answer.id }} - {{answer.text}}</p>
+    </div>
+</div>
+<div class="po-row po-mb-4">
+    <po-divider class="po-md-12" p-label="Resposta"></po-divider>
+    <po-radio-group
+        name="selectedAnswer"
+        [(ngModel)]="selectedAnswer"
+        [p-columns]="1"
+        [p-label]="Respostas"
+        [p-options]="selectAnswers"
+    >
+    </po-radio-group>
+</div>
+
+<po-button
+  p-label="Salvar"
+  (p-click)="save()">
+</po-button>

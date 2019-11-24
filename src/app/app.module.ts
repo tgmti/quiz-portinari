@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PoModule } from '@portinari/portinari-ui';
 import { RouterModule } from '@angular/router';
 import { QuestionComponent } from './components/question/question.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuestionComponent } from './components/question/question.component';
     BrowserModule,
     AppRoutingModule,
     PoModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
