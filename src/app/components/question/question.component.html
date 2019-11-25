@@ -1,14 +1,14 @@
 
-<h1>{{ topic }}</h1>
+<h1>{{ ($question | async)?.topic }}</h1>
 
 <div class="po-row po-mb-4">
     <po-divider class="po-md-12" p-label="Pergunta"></po-divider>
-    <p> {{ question }}</p>
+    <p> {{ ($question | async)?.question }}</p>
 </div>
 
 <div class="po-row po-mb-4">
     <po-divider class="po-md-12" p-label="Opções"></po-divider>
-    <div class="po-row po-mb-4" *ngFor="let answer of answers">
+    <div class="po-row po-mb-4" *ngFor="let answer of $answers | async">
         <p>{{ answer.id }} - {{answer.text}}</p>
     </div>
 </div>

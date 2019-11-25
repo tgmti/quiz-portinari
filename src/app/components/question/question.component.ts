@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { PoRadioGroupOption } from '@portinari/portinari-ui';
+import { QuestionModel } from 'src/app/models/questions';
+import { QuestionsService } from 'src/app/services/questions.service';
+import { Observable, of } from 'rxjs';
+import { tap } from 'rxjs/operators';
+import { AnswerModel } from 'src/app/models/answer';
 
 @Component({
   selector: 'app-question',
@@ -8,28 +13,30 @@ import { PoRadioGroupOption } from '@portinari/portinari-ui';
 })
 export class QuestionComponent implements OnInit {
 
-  topic = 'Inteligência Artificial';
-  question = 'A arquitetura de um agente determina, dentre outras características, a forma como os agentes se comunicam entre si e desempenham suas funções. Sobre as diversas arquiteturas dos agentes, marque a alternativa CORRETA:';
+  $question: Observable<QuestionModel>;
+  $answers: Observable<AnswerModel[]>;
 
-  answers = [
-    { id: 'A', text: 'Nos casos em que os agentes possuem facilitadores (representantes), os gerentes da arquitetura escravo-mestre se comunicam com esses facilitadores e não com os agentes subordinados.' },
-    { id: 'B', text: 'Dentre os diversos tipos de arquitetura, não há nenhum que contenha apenas um agente;'},
-    { id: 'C', text: 'Na arquitetura de troca de mensagens os agentes podem se comunicar diretamente, porém devem utilizar protocolos específicos para essa finalidade.'},
-    { id: 'D', text: 'A arquitetura de mecanismos de mercado é um dos exemplos de classificação baseada na forma pela qual os agentes cooperam entre si.'},
-    { id: 'E', text: 'A arquitetura do quadro-negro, uma das arquiteturas focadas na cooperação, é caracterizada pela intensa comunicação direta que ocorre entre os agentes.'},
-  ];
-
-  selectAnswers: PoRadioGroupOption[] = this.answers.map(q => ({ value: q.id, label: q.id }));
+  selectAnswers: PoRadioGroupOption[] = [];
 
   selectedAnswer = '';
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private questionsService: QuestionsService) {
   }
 
-  save(opt) {
-    console.log('save ', this.selectedAnswer);
+  ngOnInit() {
+    this.loadQuestion();
+  }
+
+  loadQuestion() {
+    this.$question = this.questionsService.getNextQuestion();
+    this.$answers = this.questionsService.getAnswers().pipe(
+      tap(answers => this.selectAnswers = answers.map(q => ({ value: q.id, label: q.id })))
+    );
+  }
+
+  save(answer) {
+    this.questionsService.saveAnswer(this.selectedAnswer);
+    this.loadQuestion();
   }
 
 }

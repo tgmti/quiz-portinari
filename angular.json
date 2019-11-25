@@ -124,5 +124,10 @@
       }
     }
   },
-  "defaultProject": "quiz-portinari"
+  "defaultProject": "quiz-portinari",
+  "cli": {
+    "warnings": {
+      "versionMismatch": false
+    }
+  }
 }
