@@ -36,7 +36,12 @@ export class QuestionComponent implements OnInit {
 
   save(answer) {
     this.questionsService.saveAnswer(this.selectedAnswer);
+    this.selectedAnswer = '';
     this.loadQuestion();
+  }
+
+  results() {
+    console.log('Results');
   }
 
 }

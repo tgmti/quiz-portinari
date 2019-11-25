@@ -1,30 +1,45 @@
 
-<h1>{{ ($question | async)?.topic }}</h1>
+<div *ngIf="($question | async)">
 
-<div class="po-row po-mb-4">
-    <po-divider class="po-md-12" p-label="Pergunta"></po-divider>
-    <p> {{ ($question | async)?.question }}</p>
-</div>
+    <h1>{{ ($question | async)?.topic }}</h1>
 
-<div class="po-row po-mb-4">
-    <po-divider class="po-md-12" p-label="Opções"></po-divider>
-    <div class="po-row po-mb-4" *ngFor="let answer of $answers | async">
-        <p>{{ answer.id }} - {{answer.text}}</p>
+    <div class="po-row po-mb-4">
+        <po-divider class="po-md-12" p-label="Pergunta"></po-divider>
+        <p> {{ ($question | async)?.question }}</p>
     </div>
-</div>
-<div class="po-row po-mb-4">
-    <po-divider class="po-md-12" p-label="Resposta"></po-divider>
-    <po-radio-group
-        name="selectedAnswer"
-        [(ngModel)]="selectedAnswer"
-        [p-columns]="1"
-        [p-label]="Respostas"
-        [p-options]="selectAnswers"
-    >
-    </po-radio-group>
+
+    <div class="po-row po-mb-4">
+        <po-divider class="po-md-12" p-label="Opções"></po-divider>
+        <div class="po-row po-mb-4" *ngFor="let answer of $answers | async">
+            <p>{{ answer.id }} - {{answer.text}}</p>
+        </div>
+    </div>
+    <div class="po-row po-mb-4">
+        <po-divider class="po-md-12" p-label="Resposta"></po-divider>
+        <po-radio-group
+            name="selectedAnswer"
+            [(ngModel)]="selectedAnswer"
+            [p-columns]="1"
+            [p-label]="Respostas"
+            [p-options]="selectAnswers"
+        >
+        </po-radio-group>
+    </div>
+
+    <po-button
+      p-label="Salvar"
+      (p-click)="save()">
+    </po-button>
+
 </div>
 
-<po-button
-  p-label="Salvar"
-  (p-click)="save()">
-</po-button>
+<div *ngIf="!($question | async)">
+
+    <p> Todas as questões foram respondidas</p>
+
+    <po-button
+      p-label="Resultado"
+      (p-click)="results()">
+    </po-button>
+
+</div>

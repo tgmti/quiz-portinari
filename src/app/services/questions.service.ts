@@ -30,7 +30,8 @@ export class QuestionsService {
   }
 
   getAnswers(): Observable<AnswerModel[]> {
-    return of(this.activeQuestion.answers);
+    return of(this.activeQuestion && this.activeQuestion.answers ?
+      this.activeQuestion.answers : []);
   }
 
 
