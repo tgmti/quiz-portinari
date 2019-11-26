@@ -54,6 +54,13 @@ export class QuestionComponent implements OnInit {
     console.log(this.$results);
   }
 
+  countQuestions() {
+    return this.questionsService.countQuestions();
+  }
+  countAnswers() {
+    return this.questionsService.countAnswers();
+  }
+
   clear() {
     this.totalPoints = 0;
     this.$results = of(null);

@@ -18,9 +18,9 @@
         <po-divider class="po-md-12" p-label="Resposta"></po-divider>
         <po-radio-group
           name="selectedAnswer"
+          p-label="Respostas"
+          p-columns="1"
           [(ngModel)]="selectedAnswer"
-          [p-columns]="1"
-          [p-label]="Respostas"
           [p-options]="answersOptions"
         >
         </po-radio-group>
@@ -71,13 +71,13 @@
 <po-info
     p-label="A Responder: "
     p-orientation="horizontal"
-    [p-value]="questionsService.countQuestions()"
+    [p-value]="countQuestions()"
 ></po-info>
 
 <po-info
     p-label="Respondidas: "
     p-orientation="horizontal"
-    [p-value]="questionsService.countAnswers()"
+    [p-value]="countAnswers()"
 ></po-info>
 
 <po-button
