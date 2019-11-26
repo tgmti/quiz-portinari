@@ -17,11 +17,11 @@
     <div class="po-row po-mb-4">
         <po-divider class="po-md-12" p-label="Resposta"></po-divider>
         <po-radio-group
-            name="selectedAnswer"
-            [(ngModel)]="selectedAnswer"
-            [p-columns]="1"
-            [p-label]="Respostas"
-            [p-options]="selectAnswers"
+          name="selectedAnswer"
+          [(ngModel)]="selectedAnswer"
+          [p-columns]="1"
+          [p-label]="Respostas"
+          [p-options]="answersOptions"
         >
         </po-radio-group>
     </div>
@@ -33,13 +33,41 @@
 
 </div>
 
-<div *ngIf="!($question | async)">
+<div *ngIf="!($question | async) && !($results | async)">
 
     <p> Todas as questões foram respondidas</p>
+    <br>
 
     <po-button
       p-label="Resultado"
       (p-click)="results()">
+    </po-button>
+
+</div>
+
+<div *ngIf="($results | async)">
+
+    <h1>Resultado</h1>
+
+    <po-info
+      p-label="Nota: "
+      p-orientation="horizontal"
+      [p-value]="totalPoints"
+    ></po-info>
+
+    <po-divider></po-divider>
+
+    <po-table
+      p-container="shadow"
+      [p-columns]="resultColumns"
+      [p-items]="$results | async"
+    ></po-table>
+
+    <po-divider></po-divider>
+
+    <po-button
+      p-label="Reiniciar"
+      (p-click)="clear()">
     </po-button>
 
 </div>

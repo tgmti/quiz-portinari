@@ -12,16 +12,19 @@ export class QuestionsService {
   activeQuestion: QuestionModel;
   answers = []
 
-  constructor() { this.questions = this.initQuestions(); }
+  constructor() { this.initQuestions(); }
 
-  saveAnswer(answer) {
-    this.answers.push({ id: answer, correct: this.isAnswerCorrect(answer) })
+  saveAnswer(answeredQuestion: QuestionModel, selectedAnswer: String) {
+    const {id, question} = answeredQuestion;
+    const answerObject = this.activeQuestion.answers.find(a => a.id == selectedAnswer);
+    const { text: answer, correct } = answerObject;
+    this.answers.push({ id, question, answer, correct })
   }
 
-  isAnswerCorrect(answer) {
-    console.log( 'answer', answer )
-    console.log( this.activeQuestion.answers.find(a => a.id == answer) )
-    return this.activeQuestion.answers.find(a => a.id == answer).correct;
+  getResults() {
+    const answers = this.answers;
+    this.answers = [];
+    return of(answers);
   }
 
   getNextQuestion(): Observable<QuestionModel> {
@@ -35,8 +38,8 @@ export class QuestionsService {
   }
 
 
-  private initQuestions(): QuestionModel[] {
-    return [
+  initQuestions() {
+    this.questions = [
       {
         id: '3',
         question: 'A arquitetura de um agente determina, dentre outras características, a forma como os agentes se comunicam entre si e desempenham suas funções. Sobre as diversas arquiteturas dos agentes, marque a alternativa CORRETA:',
