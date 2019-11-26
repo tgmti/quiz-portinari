@@ -63,11 +63,24 @@
       [p-items]="$results | async"
     ></po-table>
 
-    <po-divider></po-divider>
-
-    <po-button
-      p-label="Reiniciar"
-      (p-click)="clear()">
-    </po-button>
 
 </div>
+
+<po-divider></po-divider>
+
+<po-info
+    p-label="A Responder: "
+    p-orientation="horizontal"
+    [p-value]="questionsService.countQuestions()"
+></po-info>
+
+<po-info
+    p-label="Respondidas: "
+    p-orientation="horizontal"
+    [p-value]="questionsService.countAnswers()"
+></po-info>
+
+<po-button
+  p-label="Reiniciar"
+  (p-click)="clear()">
+</po-button>

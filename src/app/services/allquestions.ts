@@ -1,4 +1,4 @@
-export const questions = [
+export const allQuestions = [
   {
     id: 'LM0101',
     question: `Carlos e Marli são os pais de Valéria. A família quer viajar nas férias de julho. Carlos conseguiu tirar suas férias na fábrica do dia 2 ao dia 28. Marli obteve licença no escritório de 5 a 30. As férias de Valéria na escola vão de 1 a 25. Durante quantos dias a família poderá viajar sem faltar às suas obrigações?`,
