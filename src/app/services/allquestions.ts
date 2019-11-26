@@ -310,19 +310,6 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     ],
   },
   {
-    id: 'IA010',
-    question: `Pergunta
-    `,
-    topic: 'Inteligência Artificial',
-    answers: [
-      { id: 'A', text: 'resposta', correct: false, },
-      { id: 'B', text: 'resposta', correct: false, },
-      { id: 'C', text: 'resposta', correct: false, },
-      { id: 'D', text: 'resposta', correct: false, },
-      { id: 'E', text: 'resposta', correct: false, },
-    ],
-  },
-  {
     id: 'IA0101',
     question: `Sobre o chamado inverno da IA, é correto afirmar que:
     `,
@@ -370,7 +357,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
       { id: 'A', text: 'Cibernética e Engenharia de Computadores.', correct: false },
       { id: 'B', text: 'Neurociência e Engenharia de Computadores.', correct: false },
       { id: 'C', text: 'Matemática e Filosofia.', correct: false },
-      { id: 'D', text: 'Linguística e Inteligência Artificial.', correct: false },
+      { id: 'D', text: 'Linguística e Inteligência Artificial.', correct: true },
       { id: 'E', text: 'Inteligência Artificial e Psicologia.  ', correct: false },
     ],
   },
@@ -401,7 +388,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     `,
     topic: 'Inteligência Artificial',
     answers: [
-      { id: 'A', text: 'Nos casos em que os agentes possuem facilitadores (representantes), os gerentes da arquitetura escravo-mestre se comunicam com esses facilitadores e não com os agentes subordinados.', correct: false },
+      { id: 'A', text: 'Nos casos em que os agentes possuem facilitadores (representantes), os gerentes da arquitetura escravo-mestre se comunicam com esses facilitadores e não com os agentes subordinados.', correct: true },
       { id: 'B', text: 'Dentre os diversos tipos de arquitetura, não há nenhum que contenha apenas um agente;', correct: false },
       { id: 'C', text: 'Na arquitetura de troca de mensagens os agentes podem se comunicar diretamente, porém devem utilizar protocolos específicos para essa finalidade.', correct: false },
       { id: 'D', text: 'A arquitetura de mecanismos de mercado é um dos exemplos de classificação baseada na forma pela qual os agentes cooperam entre si.', correct: false },
@@ -418,7 +405,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
       { id: 'B', text: 'O algoritmo de busca em profundidade pode não chegar a uma solução para o problema devido à limitação de memória decorrente da grande profundidade da árvore. V', correct: false },
       { id: 'C', text: 'A busca pode ser interrompida pelo algoritmo de busca em profundidade caso chegue a um nó que não tem mais filhos. ~', correct: false },
       { id: 'D', text: 'Mesmo encontrando uma solução para o problema, o algoritmo de busca de custo uniforme continua procurando até que encontre a solução que realmente seja a de menor custo. V ', correct: false },
-      { id: 'E', text: 'A principal vantagem do algoritmo de busca em profundidade limitada sobre o algoritmo de busca em profundidade está no fato de que o primeiro sempre encontra uma solução para o problema. F', correct: false },
+      { id: 'E', text: 'A principal vantagem do algoritmo de busca em profundidade limitada sobre o algoritmo de busca em profundidade está no fato de que o primeiro sempre encontra uma solução para o problema. F', correct: true },
     ]
   },
   {
@@ -429,7 +416,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     answers: [
       { id: 'A', text: 'Assim como ocorre com os algoritmos de progressão, os algoritmos de regressão consideram todas as ações possíveis de serem executadas a partir de um determinado estado.', correct: false },
       { id: 'B', text: 'Os algoritmos de regressão são mais utilizados que os algoritmos que os algoritmos de progressão em virtude do tratamento que os primeiros dão aos estados.', correct: false },
-      { id: 'C', text: 'Algoritmos de busca em espaços de estados para frente não são adequados para problemas com fator de ramificação muito alto.', correct: false },
+      { id: 'C', text: 'Algoritmos de busca em espaços de estados para frente não são adequados para problemas com fator de ramificação muito alto.', correct: true },
       { id: 'D', text: 'As heurísticas utilizadas pelos algoritmos de planejamento são sempre as mesmas, afinal, seu propósito é sempre o mesmo.', correct: false },
       { id: 'E', text: 'A principal vantagem da decomposição dos problemas é a grande abrangência que ela possui sobre quase todos os tipos de problemas.', correct: false },
     ]
@@ -443,7 +430,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
       { id: 'A', text: 'projeto da máquina de Turing.', correct: false },
       { id: 'B', text: 'processo filosófico.', correct: false },
       { id: 'C', text: 'projeto de aprendizado psicológico.', correct: false },
-      { id: 'D', text: 'projeto de simulação cognitiva.', correct: false },
+      { id: 'D', text: 'projeto de simulação cognitiva.', correct: true },
       { id: 'E', text: 'projeto de inteligência artificial.', correct: false },
     ]
   },
@@ -455,7 +442,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     answers: [
       { id: 'A', text: 'no planejamento clássico é impossível saber quais serão os efeitos causados por uma determinada ação executada pelo planejador.', correct: false },
       { id: 'B', text: 'o planejador é uma estrutura utilizada no contexto dos algoritmos de planejamento, enquanto o escalonador é utilizado por algoritmos de busca.', correct: false },
-      { id: 'C', text: 'os algoritmos de planejamento focam na resolução de problemas por meio da deliberação.', correct: false },
+      { id: 'C', text: 'os algoritmos de planejamento focam na resolução de problemas por meio da deliberação.', correct: true },
       { id: 'D', text: 'o planejamento clássico considera a solução de problemas em ambientes dinâmicos.', correct: false },
       { id: 'E', text: 'a principal diferença entre os algoritmos de planejamento e os algoritmos de busca é que os algoritmos de planejamento não partem de um estado inicial em busca de um estado objetivo.', correct: false },
     ]
@@ -469,7 +456,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
       { id: 'A', text: 'independentemente da topologia de rede escolhida, as redes Multi Layer Percetron sempre possuem três camadas.', correct: false },
       { id: 'B', text: 'as Redes Neurais possuem um número de camadas intermediárias limitado e independente da topologia de rede escolhida.', correct: false },
       { id: 'C', text: 'o número de neurônios presentes em cada camada da rede é independente da topologia da rede.', correct: false },
-      { id: 'D', text: 'há uma dependência entre o problema que se pretende resolver e a topologia de rede escolhida.', correct: false },
+      { id: 'D', text: 'há uma dependência entre o problema que se pretende resolver e a topologia de rede escolhida.', correct: true },
       { id: 'E', text: 'as redes Multi Layer Percetron são padronizadas, o que as exime da necessidade de serem submetidas a treinamento.', correct: false },
     ]
   },
@@ -483,7 +470,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
       { id: 'B', text: 'Redes neurais, algoritmos genéticos e sistemas imunológicos artificiais.', correct: false },
       { id: 'C', text: 'Sistemas nebulosos, algoritmos de enxame e redes neurais.', correct: false },
       { id: 'D', text: 'Redes neurais, algoritmos genéticos e química artificial.', correct: false },
-      { id: 'E', text: 'Algoritmos de enxames, algoritmos de matilhas e redes neurais.', correct: false },
+      { id: 'E', text: 'Algoritmos de enxames, algoritmos de matilhas e redes neurais.', correct: true },
     ]
   },
   {
@@ -496,7 +483,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
       { id: 'B', text: 'os critérios para a definição das populações devem ser bem estruturados, uma vez que a população não pode ser alterada após o início do processo de busca.', correct: false },
       { id: 'C', text: 'os Algoritmos Genéticos atuam com um único elemento candidato, manipulado de forma iterativa na busca pelo resultado desejado.', correct: false },
       { id: 'D', text: 'mesmo os AG que atuam sobre populações podem manipular um único grupo de membros de cada vez, a fim de reduzir o consumo de recursos computacionais.', correct: false },
-      { id: 'E', text: 'o espaço de busca pode ser explorado por vários grupos de membros, formados pelos indivíduos mais adequados.', correct: false },
+      { id: 'E', text: 'o espaço de busca pode ser explorado por vários grupos de membros, formados pelos indivíduos mais adequados.', correct: true },
     ]
   },
   {
@@ -506,7 +493,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     topic: 'Inteligência Artificial',
     answers: [
       { id: 'A', text: 'A melhoria na experiência de atendimento a clientes do setor financeiro é um dos poucos problemas que as RN ainda não puderam resolver nessa área. F', correct: false },
-      { id: 'B', text: 'Embora haja ferramentas capazes de criar medicamentos, e até elementos químicos, de forma automática, é necessário que algumas informações sejam introduzidas no sistema por seres humanos.', correct: false },
+      { id: 'B', text: 'Embora haja ferramentas capazes de criar medicamentos, e até elementos químicos, de forma automática, é necessário que algumas informações sejam introduzidas no sistema por seres humanos.', correct: true },
       { id: 'C', text: 'Apesar do grande número de conteúdos produzidos de forma automática por ferramentas utilizadas na área de Marketing, quando se trata de expressar opiniões, ainda é mandatória a presença de um ser humano. F', correct: false },
       { id: 'D', text: 'Ferramentas como o ReLeaSE possuem alto nível de complexidade e solucionam problemas altamente complexos. Por essa razão, não requerem uma época de treinamento. F', correct: false },
       { id: 'E', text: 'A automação de processos no setor energético visa reduzir os elevados custos com pessoal, substituindo as pessoas por robôs na realização de tarefas repetitivas. F', correct: false },
@@ -521,7 +508,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
       { id: 'A', text: 'Assim como ocorre com a lógica clássica, na LN os elementos devem pertencer ou não a um conjunto, de forma dicotômica.', correct: false },
       { id: 'B', text: 'Uma função de pertinência deve ser utilizada para determinar se um elemento pertence ou não a um conjunto.', correct: false },
       { id: 'C', text: 'A principal semelhança entre as Lógica Nebulosa e tradicional é a representação dos problemas de forma numérica.', correct: false },
-      { id: 'D', text: 'Os problemas que a LN se propõe a resolver têm predominância de subjetividade, incerteza e falta de linearidade.', correct: false },
+      { id: 'D', text: 'Os problemas que a LN se propõe a resolver têm predominância de subjetividade, incerteza e falta de linearidade.', correct: true },
       { id: 'E', text: 'Nas versões nebulosas do algoritmo K-means, cada registro deve pertencer a um único grupo ou classe.', correct: false },
     ]
   },
@@ -531,7 +518,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     `,
     topic: 'Inteligência Artificial',
     answers: [
-      { id: 'A', text: 'A Lógica Difusa determina que um valor pertence a um conjunto ou não pertence.', correct: false },
+      { id: 'A', text: 'A Lógica Difusa determina que um valor pertence a um conjunto ou não pertence.', correct: true },
       { id: 'B', text: 'As funções de pertinência são usadas para determinar associações de pertinência.', correct: false },
       { id: 'C', text: 'A Lógica Difusa permite que afirmações do tipo “talvez” ou “quase” sejam aceitas para classificar dados ou gerar conclusões.', correct: false },
       { id: 'D', text: 'Problemas com alto nível de imprecisão e subjetividade podem ser resolvidos a partir de sistemas baseados na Lógica Difusa.', correct: false },
@@ -548,7 +535,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
       { id: 'A', text: 'um operador de mutação permite o cruzamento entre pares de regras para geração de novas regras.', correct: false },
       { id: 'B', text: 'cada cromossoma representa um atributo do banco de dados.', correct: false },
       { id: 'C', text: 'tanto o crossover lógico quanto a mutação lógica podem ser aplicados a atributos categóricos e quantitativos.', correct: false },
-      { id: 'D', text: 'os indivíduos mais fortes, ou que melhor representam uma regra, são aqueles cuja confiança e abrangência são as maiores.', correct: false },
+      { id: 'D', text: 'os indivíduos mais fortes, ou que melhor representam uma regra, são aqueles cuja confiança e abrangência são as maiores.', correct: true },
       { id: 'E', text: 'o operador de crossover deve ser aplicado a um único ponto de uma regra, sob o risco de gerar anomalias.', correct: false },
     ]
   },
@@ -558,7 +545,7 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     `,
     topic: 'Inteligência Artificial',
     answers: [
-      { id: 'A', text: 'O aprendizado de máquina se refere à capacidade que os agentes possuem de aprenderem com o ambiente, com os dados e com os problemas que precisam resolver.', correct: false },
+      { id: 'A', text: 'O aprendizado de máquina se refere à capacidade que os agentes possuem de aprenderem com o ambiente, com os dados e com os problemas que precisam resolver.', correct: true },
       { id: 'B', text: 'As árvores de decisão implementam apenas conceitos de redes neurais artificiais (RNA), sem qualquer relação com o aprendizado de máquina.', correct: false },
       { id: 'C', text: 'Os problemas seguem padrões, portanto, seria perfeitamente possível que os algoritmos fossem programados com todas as soluções possíveis para cada problema.', correct: false },
       { id: 'D', text: 'Os agentes não possuem conhecimento prévio sobre o problema e sobre o ambiente. Por isso é necessário que se realize a fase de treinamento.', correct: false },
@@ -588,9 +575,21 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
       { id: 'B', text: 'A utilidade é o resultado da média dos valores das recompensas esperadas em cada estado, a partir da execução da política .', correct: false },
       { id: 'C', text: 'As percepções que o agente obtém a partir das recompensas são restritas ao resultado final e não ao estado atual em que se encontra.', correct: false },
       { id: 'D', text: 'A meta de um agente de aprendizagem passiva é determinar qual a melhor política a ser seguida.', correct: false },
-      { id: 'E', text: 'Cada percepção que o agente tem sobre um determinado estado está vinculada à recompensa recebida.', correct: false },
+      { id: 'E', text: 'Cada percepção que o agente tem sobre um determinado estado está vinculada à recompensa recebida.', correct: true },
     ]
   },
-
+  {
+    id: 'IA0101',
+    question: `Pergunta
+    `,
+    topic: 'Inteligência Artificial',
+    answers: [
+      { id: 'A', text: 'resposta', correct: false, },
+      { id: 'B', text: 'resposta', correct: false, },
+      { id: 'C', text: 'resposta', correct: false, },
+      { id: 'D', text: 'resposta', correct: false, },
+      { id: 'E', text: 'resposta', correct: false, },
+    ],
+  },
 ];
 

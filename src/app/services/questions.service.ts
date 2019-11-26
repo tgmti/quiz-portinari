@@ -49,6 +49,5 @@ export class QuestionsService {
 
   initQuestions() {
     this.questions = allQuestions.sort(fn => Math.random() - Math.random());
-    console.log(this.questions.map(q => q.id));
   }
 }
