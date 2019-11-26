@@ -4,10 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "prebuild": "git checkout gh-pages && git merge master --force",
+    "build": "ng build --prod --base-href https://tgmti.github.io/quiz-portinari/",
+    "ghpages": "yarn build && ngh --dir=dist/quiz-portinari",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "instghpages": "yarn global add angular-cli-ghpages"
   },
   "private": true,
   "dependencies": {
