@@ -579,16 +579,307 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     ]
   },
   {
-    id: 'IA0101',
-    question: `Pergunta
+    id: 'SA0101',
+    question: `A segurança da informação é sempre um aspecto muito discutido dentro das organizações, principalmente no que diz respeito às políticas internas previstas. Analise as alternativas abaixo e assinale a CORRETA:
     `,
-    topic: 'Inteligência Artificial',
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'A segurança da informação tem como base os aspectos denominados de pilares da segurança da informação: confidencialidade, integridade e disponibilidade. Estes aspectos devem refletir diretamente nas políticas de segurança da organização, visando sempre atender aos requisitos impostos por eles.', correct: true, },
+      { id: 'B', text: 'resposta', correct: false, },
+      { id: 'C', text: 'resposta', correct: false, },
+      { id: 'D', text: 'resposta', correct: false, },
+      { id: 'E', text: 'resposta', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0102',
+    question: `Para Laudon & Laudon (2000), alguns princípios éticos devem ser levados em consideração, leia as afirmativas abaixo e assinale a alternativa que indica os princípios éticos mencionados de forma CORRETA:
+
+    I. “Faça aos outros o que desejaria que fizessem a você” – princípio da Regra de ouro.
+
+    II. “A decisão a ser tomada é aquela que traz os maiores benefícios possíveis” – principio Imperativo categórico de Kant.
+
+    III. “Se uma ação não é correta para todos adotarem, então não é correta para ninguém” – principio Utilitário.
+
+    IV. “Se uma decisão não pode ser tomada rapidamente, então não é certo toma-la em momento algum” – princípio da Regra da mudança de descartes.
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'As afirmativas I e IV estão corretas.', correct: true, },
+      { id: 'B', text: 'Todas as alternativas estão corretas', correct: false, },
+      { id: 'C', text: 'As afirmativas I, II e IV estão corretas.', correct: false, },
+      { id: 'D', text: 'As afirmativas II e III estão corretas.', correct: false, },
+      { id: 'E', text: 'As afirmativas I e II estão corretas.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0103',
+    question: `No que diz respeito ao modo de transmissão dos dados, os mesmos podem ser realizados em três modalidades: Simplex, Half-Duplex, Full-Duplex. Com base nesta informação, assinale a alternativa correta.
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'O sinal recebido via rádio e televisão é classificado na modalidade simplex.', correct: true, },
+      { id: 'B', text: 'resposta', correct: false, },
+      { id: 'C', text: 'resposta', correct: false, },
+      { id: 'D', text: 'resposta', correct: false, },
+      { id: 'E', text: 'resposta', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0104',
+    question: `Cada tipo de Sistema de Informação compreende de forma específica uma função dentro da organização. Analise as afirmativas abaixo e assinale a alternativa CORRETA.
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Os Sistemas de Apoio à Decisão (SAD) são os sistemas de informação que auxiliam os gerentes de uma organização a tomar decisões semiestruturadas, com base em dados obtidos dos sistemas de informação gerencial, dos sistemas de processamento de transações e de fontes externas.', correct: true, },
+      { id: 'B', text: 'resposta', correct: false, },
+      { id: 'C', text: 'resposta', correct: false, },
+      { id: 'D', text: 'resposta', correct: false, },
+      { id: 'E', text: 'resposta', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0105',
+    question: `Uma informação é caracterizada por possuir um ciclo de vida, ou seja, ela possui algumas fases que a acompanham durante todo o seu processo de usabilidade. Assinale a alternativa CORRETA que represente de forma hierárquica quais são as fases do ciclo de vida de uma informação:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'resposta', correct: false, },
+      { id: 'B', text: 'resposta', correct: false, },
+      { id: 'C', text: '1 - Manuseio, 2 - Armazenamento, 3 – Transporte, 4 - Descarte.', correct: true, },
+      { id: 'D', text: 'resposta', correct: false, },
+      { id: 'E', text: 'resposta', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0201',
+    question: `
+    Assinale a alternativa que representa uma segurança lógica da informação.
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Os seguranças em um supermercado podem ser considerados componentes de uma segurança lógica, visto que utilizam o bom senso em muitas situações para identificar eventuais transtornos.', correct: false, },
+      { id: 'B', text: 'A utilização de alarmes de segurança e incêndio são característicos de segurança lógica da informação.', correct: false, },
+      { id: 'C', text: 'A utilização de acesso através da impressão digital é considerada uma segurança lógica, visto que a mesma é realizada através da utilização de um software para identificação de pessoas.', correct: true, },
+      { id: 'D', text: 'Ter um cadastro de todos os funcionários com dados pessoais é característico de uma segurança lógica da informação.', correct: false, },
+      { id: 'E', text: 'Uma porta fechada com trancas e cadeados pode ser considerada uma segurança lógica de informação.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0202',
+    question: `Sobre os preceitos relacionados à Segurança Física, é correto afirmar que:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'A segurança física é definida de modo geral com o uso das medidas físicas para proteger valores, informação ou acessar recursos restritos.', correct: true, },
+      { id: 'B', text: 'A segurança física pode ser executada apenas com a utilização de recurso pessoal (humanos).', correct: false, },
+      { id: 'C', text: 'A utilização de um software como ser caracterizado como uma medida de segurança física.', correct: false, },
+      { id: 'D', text: 'Segurança física é aquela que desconsidera ameaças físicas, como desabamentos, relampados, raios, alagamentos, incêndios e foca apenas em ameaças como invasões.', correct: false, },
+      { id: 'E', text: 'Confidencialidade, disponibilidade e integridade são requisitos que dizem respeito apenas à segurança lógica.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0203',
+    question: `No que diz respeito aos ataques providos pela Engenharia Social, analise as afirmativas abaixo.
+
+    I. Ataques de engenharia social podem ser métodos bem eficazes de burlar soluções fortes de segurança de computadores.
+
+    II. Nos ataques baseados em interação humana, o atacante utiliza diferentes técnicas de contato para obter a informação desejada.
+
+    III. Nos ataques baseados em localizações físicas, para que o alvo envie informações ao invasor, os ataques dependem da tecnologia para manipular e enganar a vítima e permitir a execução das ações maliciosas.
+
+    IV. Os ataques de engenharia social são considerados simples e envolvem poucas etapas e planejamento, combinado o conhecimento da manipulação e tecnologia.
+
+    Assinale a alternativa que apresenta apenas as alternativas corretas:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Apenas a afirmativa III está correta.', correct: false, },
+      { id: 'B', text: 'As afirmativas I, II, III e IV estão corretas.', correct: false, },
+      { id: 'C', text: 'Apenas as afirmativas II e IV estão corretas.', correct: false, },
+      { id: 'D', text: 'Apenas as afirmativas I e II estão corretas.', correct: false, },
+      { id: 'E', text: 'Apenas as afirmativas I, II e III estão corretas.', correct: true, },
+    ],
+  },
+  {
+    id: 'SA0204',
+    question: `São considerados ataques de informação a uma organização:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Intromissão, alteração e isolamento.', correct: false, },
+      { id: 'B', text: 'Antivírus, negação de serviço e repúdio.', correct: false, },
+      { id: 'C', text: 'Negação de serviço, mascaramento e incêndio.', correct: false, },
+      { id: 'D', text: 'Intromissão, alteração e mascaramento.', correct: true, },
+      { id: 'E', text: 'Rastreio do passado, repudio e VPN.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0205',
+    question: `Assinale a alternativa que não representa um conceito de Engenharia Social:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Afirma que o termo engenharia social refere-se a técnicas que envolvem o uso de intrusos humanos para enganar as soluções de segurança de computadores.', correct: false, },
+      { id: 'B', text: 'A engenharia social envolve práticas utilizadas para que um indivíduo não autorizado tenha acesso a informações importantes ou sigilosas de sistemas de informação, por meio da exploração da confiança das pessoas, para enganá-las ou induzi-las a erro.', correct: false, },
+      { id: 'C', text: 'A engenharia social existe pela falta de habilidade dos usuários de informática de se manterem atualizados com a tecnologia da informação, e por não conseguirem medir o valor das suas informações e não se preocuparem em protegê-las.', correct: false, },
+      { id: 'D', text: 'A engenharia social é uma profissão relacionada à área de exatas que trata da construção de áreas sociais e parques.', correct: true, },
+      { id: 'E', text: 'A engenharia social usa a influência e a persuasão para enganar as pessoas e convencê-las de que o engenheiro social é alguém que na verdade ele não e, ou pela manipulação.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0301',
+    question: `Para Junior (2009) os principais enfoques da auditoria são? Analise as afirmativas abaixo e posteriormente assinale a alternativa correta.
+
+    I. Entendimento do negócio: compreender o negócio é essencial para identificar os riscos e avaliar os controles.
+
+    II. Verificação da aderência dos aplicativos à lógica e às regras de negócio.
+
+    III. Análise dos controles gerais aplicados aos sistemas.
+
+    IV. Análise dos controles internos dos aplicativos.
+
+    V. Verificação da satisfação dos usuários.
+
+    `,
+    topic: 'Segurança e Auditoria',
     answers: [
       { id: 'A', text: 'resposta', correct: false, },
       { id: 'B', text: 'resposta', correct: false, },
       { id: 'C', text: 'resposta', correct: false, },
       { id: 'D', text: 'resposta', correct: false, },
-      { id: 'E', text: 'resposta', correct: false, },
+      { id: 'E', text: 'Todas as afirmativas estão corretas.', correct: true, },
+    ],
+  },
+  {
+    id: 'SA0302',
+    question: `Segundo Mattos (2017), algumas etapas devem ser consideradas para a elaboração de uma auditoria, são elas:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'resposta', correct: false, },
+      { id: 'B', text: 'resposta', correct: false, },
+      { id: 'C', text: 'resposta', correct: false, },
+      { id: 'D', text: 'resposta', correct: false, },
+      { id: 'E', text: 'Riscos e controles, Walkthrough, Papeis de Trabalho, Teste e Relatório.', correct: true, },
+    ],
+  },
+  {
+    id: 'SA0303',
+    question: `Sobre a Auditoria de Sistemas de informação, é correto afirmar que:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Para a execução de uma auditoria de sistema, basta contratar um profissional da área de tecnologias e agendar a vistoria a ser realizada.', correct: false, },
+      { id: 'B', text: 'A forma como as informações são arquivadas/guardadas não diz respeito à auditoria de sistemas.', correct: false, },
+      { id: 'C', text: 'a auditoria de sistemas de informação visa verificar a conformidade dos aspectos contábeis da organização.', correct: false, },
+      { id: 'D', text: 'A auditoria de sistemas visa avaliar apenas os recursos de hardware presentes em uma rede.', correct: false, },
+      { id: 'E', text: 'Quanto melhor forem as formas de controle dos processos internos, maiores serão os resultados operacionais das organizações, portanto, as empresas devem utilizar as auditorias de sistemas para regularizar rotinas e melhorar seus indicadores de resultados.', correct: true, },
+    ],
+  },
+  {
+    id: 'SA0304',
+    question: `A execução do processo de auditoria busca:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Segurança física, Confidencialidade e Eficiência.', correct: false, },
+      { id: 'B', text: 'Segurança, Autorrendimento e Lucratividade.', correct: false, },
+      { id: 'C', text: 'Eficácia, Eficiência e Efetividade.', correct: false, },
+      { id: 'D', text: 'Eficácia, Eficiência e Economicidade.', correct: true, },
+      { id: 'E', text: 'Autonomia, Rendimento e Efetividade.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0305',
+    question: `O trabalho da auditoria é mais do que a avaliação das demonstrações contábeis financeiras, pois existem inúmeras outras atividades e ramos de atuação relacionados ao mercado de auditoria. Assinale a resposta correta em relação às áreas de atuação da auditoria.
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Uma auditoria operacional é aplicável para avaliação apenas de cenários passados, única e exclusiva.', correct: false, },
+      { id: 'B', text: 'É comum uma equipe de trabalho de auditoria de contabilidade ser composta por profissionais de outras atividades alheias a contabilidade.', correct: false, },
+      { id: 'C', text: 'A auditoria governamental busca estudar os aspectos da governança corporativa e emitir parecer sobre a aderência da empresa às normas fiscais impostas pelo governo.', correct: true, },
+      { id: 'D', text: 'A auditoria fiscal busca fiscalizar o ambiente de controles internos da empresa, reportando à alta administração a situação real dos controles internos, face às normas administrativas.', correct: false, },
+      { id: 'E', text: 'O trabalho de auditoria de TI tem a finalidade de elaborar um plano de trabalho para os auditores externos, listando os principais relatórios que deverão ser avaliados durante a auditoria contábil.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0401',
+    question: `Com base nos estudos realizados sobre a existência de um Plano de Contingência, podemos afirmar que:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Um Plano de Contingência pode ser acionado por uma interrupção momentânea de energia elétrica.', correct: false, },
+      { id: 'B', text: 'A elaboração de um Plano de Contingência é uma tarefa de baixa complexidade visto que pode ser estabelecido em duas etapas: 1ª estabelecimento dos riscos e 2ª atividades a serem desempenhadas.', correct: false, },
+      { id: 'C', text: 'Plano de Contingência é um plano para a resposta de emergência, operações backup, e recuperação após um desastre em um sistema como a parte de um programa da segurança para assegurar a disponibilidade de recursos de sistema críticos e para facilitar a continuidade das operações durante uma crise.', correct: true, },
+      { id: 'D', text: 'Plano de Contingência é a definição de processos acionados cotidianamente nas empresas durante um evento que afete as atividades normais, sendo necessários para funcionamento da organização.', correct: false, },
+      { id: 'E', text: 'Todo risco incluso em um Plano de Contingência deve ser tratado da mesma maneira, com a mesma rigorosidade e atenção.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0402',
+    question: `Existem alguns critérios que devem ser considerados para a construção de uma Política de Segurança de Informação. Analise as afirmativas abaixo, e assinale a alternativa correta.
+
+    I. Integridade dos dados: refere-se à proteção contra a mudança de dados.
+
+    II. Disponibilidade dos dados: contra a interrupção do serviço,
+
+    III. Confidencialidade dos dados: refere-se à capacidade de um remetente permanecer anônimo.
+
+    IV. Privacidade: refere-se à proteção contra o acesso não autorizado.
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Apenas a I está correta.', correct: false, },
+      { id: 'B', text: 'Todas as afirmativas estão corretas.', correct: false, },
+      { id: 'C', text: 'As afirmativas I, II e IV estão corretas.', correct: false, },
+      { id: 'D', text: 'As afirmativas II e III estão corretas', correct: false, },
+      { id: 'E', text: 'As afirmativas I e II estão corretas.', correct: true, },
+    ],
+  },
+  {
+    id: 'SA0403',
+    question: `De acordo com Faria (2016), dentre os métodos possíveis para utilização nos procedimentos de testes de segurança da informação, estão:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Injeção de código e phishing.', correct: false, },
+      { id: 'B', text: 'Soldagem e avaliação de servidores.', correct: false, },
+      { id: 'C', text: 'Analise de tráfego e investigação.', correct: false, },
+      { id: 'D', text: 'Força bruta e análise de tráfego.', correct: true, },
+      { id: 'E', text: 'Avaliação de servidores e injeção de tráfego.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0404',
+    question: `Um teste de penetração consiste em uma auditoria prática que objetiva simular um ataque real. Analise as afirmativas abaixo e assinale a alternativa correta:
+
+    I. O processo de teste de penetração pode ser dividido em duas grandes fases.
+
+    II. É de extrema importância que os auditores tenham permissão explícita adequada dentro da organização a respeito do trabalho em questão, além de explicarem aos usuários da rede os tipos de ataques que serão efetuados e quais de seus efeitos colaterais são considerados aceitáveis à rede.
+
+    III. A fase final do teste de penetração típico envolve explorar vulnerabilidades existentes tentando obter acesso a recursos internos.
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'As afirmativas I e II estão corretas.', correct: false, },
+      { id: 'B', text: 'As afirmativas II e III estão corretas.', correct: true, },
+      { id: 'C', text: 'Apenas a afirmativa III está correta.', correct: false, },
+      { id: 'D', text: 'As afirmativas I e III estão corretas.', correct: false, },
+      { id: 'E', text: 'Todas as afirmativas estão corretas.', correct: false, },
+    ],
+  },
+  {
+    id: 'SA0405',
+    question: `Assinale a alternativa abaixo que apresenta o conceito correto sobre Criptografia:
+    `,
+    topic: 'Segurança e Auditoria',
+    answers: [
+      { id: 'A', text: 'Uma vez que uma informação for criptografada nunca mais poderá ser reescrita.', correct: false, },
+      { id: 'B', text: 'É um processo de compactação de informações.', correct: false, },
+      { id: 'C', text: 'É um processo de correção de dados.', correct: false, },
+      { id: 'D', text: 'A criptografia envolve o uso de algoritmos matemáticos especiais, ou chaves, para transformar dados digitais em código antes de serem transmitidos e para decodificar os dados quando são recebidos.', correct: true, },
+      { id: 'E', text: 'A criptografia desvia a informação no seu processo de comunicação.', correct: false, },
     ],
   },
 ];
