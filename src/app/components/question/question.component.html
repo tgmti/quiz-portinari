@@ -39,10 +39,12 @@
 
 </div>
 
-<div *ngIf="!($question | async) && !($results | async)">
+<div>
 
+  <div *ngIf="!($question | async) && !($results | async)">
     <p> Todas as questões foram respondidas</p>
-    <br>
+  </div>
+  <br>
 
     <po-button
       p-label="Resultado"
