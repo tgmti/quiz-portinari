@@ -16,7 +16,7 @@ export class QuestionsService {
   constructor() { this.initQuestions(); }
 
   countQuestions() {
-    return this.questions.length;
+    return this.questions.length + (this.activeQuestion ? 1 : 0);
   }
 
   countAnswers() {
