@@ -117,9 +117,9 @@ export const allQuestions = [
     id: 'LM0204',
     question: `Determine o valor lógico (V ou F) de cada uma das sentenças.
 
-    I) 3   >       e     2  + 2 = 4
+    I) 3 >       e     2  + 2 = 4
 
-    II) 32 = 6    ou  pi é um número racional.
+    II) 3² = 6 ou  pi é um número racional.
 
     III) -2 >  -3 ,  se e somente se,  Aracaju é a capital da Bahia.
 
@@ -315,11 +315,11 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     `,
     topic: 'Inteligência Artificial',
     answers: [
-      { id: 'A', text: 'resposta', correct: false, },
-      { id: 'B', text: 'resposta', correct: false, },
-      { id: 'C', text: 'o inverno da ocorreu em decorrência do descrédito em empresas que não entregavam aquilo que prometiam em termos de IA.', correct: true, },
-      { id: 'D', text: 'resposta', correct: false, },
-      { id: 'E', text: 'resposta', correct: false, },
+      { id: 'A', text: 'o inverno da IA ocorreu em decorrência do desempenho dos hardwares da época não era compatível com as necessidades da IA', correct: false, },
+      { id: 'B', text: 'o inverno da IA ocorreu em decorrência de que não haviam linguagens de programação suficiente boas para lidar com algoritimos de IA', correct: false, },
+      { id: 'C', text: 'o inverno da IA ocorreu em decorrência do descrédito em empresas que não entregavam aquilo que prometiam em termos de IA.', correct: true, },
+      { id: 'D', text: 'o inverno da IA ocorreu em decorrência de empresas que apostaram muito na tecnologia, mas não puderam manter os investimentos por muito tempo.', correct: false, },
+      { id: 'E', text: 'o inverno da IA ocorreu em decorrência de haver poucos profissionais treinados para desenvolver', correct: false, },
     ],
   },
   {
@@ -329,10 +329,10 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     topic: 'Inteligência Artificial',
     answers: [
       { id: 'A', text: 'Teorema de Bayes.', correct: true },
-      { id: 'B', text: 'resposta', correct: false, },
-      { id: 'C', text: 'resposta', correct: false, },
-      { id: 'D', text: 'resposta', correct: false, },
-      { id: 'E', text: 'resposta', correct: false, },
+      { id: 'B', text: 'Teorema de Pitágoras', correct: false, },
+      { id: 'C', text: 'Fórmula de Báscara', correct: false, },
+      { id: 'D', text: 'Teorema de Fermat', correct: false, },
+      { id: 'E', text: 'Inteligência Artificial', correct: false, },
     ],
   },
   {
@@ -342,10 +342,10 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     topic: 'Inteligência Artificial',
     answers: [
       { id: 'A', text: 'identificação do sentimento das pessoas em relação a um determinado conteúdo.', correct: true },
-      { id: 'B', text: 'resposta', correct: false, },
-      { id: 'C', text: 'resposta', correct: false, },
-      { id: 'D', text: 'resposta', correct: false, },
-      { id: 'E', text: 'resposta', correct: false, },
+      { id: 'B', text: 'identificação de padrões de comportamento de enxames', correct: false, },
+      { id: 'C', text: 'visão computacional', correct: false, },
+      { id: 'D', text: 'linguagem natural e linguística', correct: false, },
+      { id: 'E', text: 'ciência de dados', correct: false, },
     ],
   },
   {
@@ -376,10 +376,10 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
   topic: 'Inteligência Artificial',
   answers: [
     { id: 'A', text: 'I. Processamento de linguagem natural, II. raciocínio automatizado e III. aprendizado de máquina.', correct: true },
-    { id: 'B', text: 'resposta', correct: false, },
-    { id: 'C', text: 'resposta', correct: false, },
-    { id: 'D', text: 'resposta', correct: false, },
-    { id: 'E', text: 'resposta', correct: false, },
+    { id: 'B', text: 'I. Processamento de linguagem natural, II. armazenamento e III. aprendizado de máquina.', correct: false, },
+    { id: 'C', text: 'I. Reconhecimento de padrões, II. raciocínio automatizado e III. inteligência artificial.', correct: false, },
+    { id: 'D', text: 'I. Armazenamento, II. processamento de linguagem natural e III. racioncínio automatizado.', correct: false, },
+    { id: 'E', text: 'I. Raciocínio automatizado, II. Armazenamento e III. aprendizado de máquina.', correct: false, },
     ],
   },
   {
@@ -401,11 +401,11 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     `,
     topic: 'Inteligência Artificial',
     answers: [
-      { id: 'A', text: 'O algoritmo de busca em largura deve garantir que nenhum dos nós seja visitado mais de uma vez. V', correct: false },
-      { id: 'B', text: 'O algoritmo de busca em profundidade pode não chegar a uma solução para o problema devido à limitação de memória decorrente da grande profundidade da árvore. V', correct: false },
-      { id: 'C', text: 'A busca pode ser interrompida pelo algoritmo de busca em profundidade caso chegue a um nó que não tem mais filhos. ~', correct: false },
-      { id: 'D', text: 'Mesmo encontrando uma solução para o problema, o algoritmo de busca de custo uniforme continua procurando até que encontre a solução que realmente seja a de menor custo. V ', correct: false },
-      { id: 'E', text: 'A principal vantagem do algoritmo de busca em profundidade limitada sobre o algoritmo de busca em profundidade está no fato de que o primeiro sempre encontra uma solução para o problema. F', correct: true },
+      { id: 'A', text: 'O algoritmo de busca em largura deve garantir que nenhum dos nós seja visitado mais de uma vez.', correct: false },
+      { id: 'B', text: 'O algoritmo de busca em profundidade pode não chegar a uma solução para o problema devido à limitação de memória decorrente da grande profundidade da árvore.', correct: false },
+      { id: 'C', text: 'A busca pode ser interrompida pelo algoritmo de busca em profundidade caso chegue a um nó que não tem mais filhos.', correct: false },
+      { id: 'D', text: 'Mesmo encontrando uma solução para o problema, o algoritmo de busca de custo uniforme continua procurando até que encontre a solução que realmente seja a de menor custo.', correct: false },
+      { id: 'E', text: 'A principal vantagem do algoritmo de busca em profundidade limitada sobre o algoritmo de busca em profundidade está no fato de que o primeiro sempre encontra uma solução para o problema.', correct: true },
     ]
   },
   {
@@ -492,11 +492,11 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     `,
     topic: 'Inteligência Artificial',
     answers: [
-      { id: 'A', text: 'A melhoria na experiência de atendimento a clientes do setor financeiro é um dos poucos problemas que as RN ainda não puderam resolver nessa área. F', correct: false },
+      { id: 'A', text: 'A melhoria na experiência de atendimento a clientes do setor financeiro é um dos poucos problemas que as RN ainda não puderam resolver nessa área.', correct: false },
       { id: 'B', text: 'Embora haja ferramentas capazes de criar medicamentos, e até elementos químicos, de forma automática, é necessário que algumas informações sejam introduzidas no sistema por seres humanos.', correct: true },
-      { id: 'C', text: 'Apesar do grande número de conteúdos produzidos de forma automática por ferramentas utilizadas na área de Marketing, quando se trata de expressar opiniões, ainda é mandatória a presença de um ser humano. F', correct: false },
-      { id: 'D', text: 'Ferramentas como o ReLeaSE possuem alto nível de complexidade e solucionam problemas altamente complexos. Por essa razão, não requerem uma época de treinamento. F', correct: false },
-      { id: 'E', text: 'A automação de processos no setor energético visa reduzir os elevados custos com pessoal, substituindo as pessoas por robôs na realização de tarefas repetitivas. F', correct: false },
+      { id: 'C', text: 'Apesar do grande número de conteúdos produzidos de forma automática por ferramentas utilizadas na área de Marketing, quando se trata de expressar opiniões, ainda é mandatória a presença de um ser humano.', correct: false },
+      { id: 'D', text: 'Ferramentas como o ReLeaSE possuem alto nível de complexidade e solucionam problemas altamente complexos. Por essa razão, não requerem uma época de treinamento.', correct: false },
+      { id: 'E', text: 'A automação de processos no setor energético visa reduzir os elevados custos com pessoal, substituindo as pessoas por robôs na realização de tarefas repetitivas.', correct: false },
     ]
   },
   {
@@ -559,10 +559,10 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     topic: 'Inteligência Artificial',
     answers: [
       { id: 'A', text: 'As previsões realizadas pelo Wang-Mendel dependem de um número n de valores passados de x;', correct: true },
-      { id: 'B', text: 'resposta', correct: false },
-      { id: 'C', text: 'resposta', correct: false },
-      { id: 'D', text: 'resposta', correct: false },
-      { id: 'E', text: 'resposta', correct: false },
+      { id: 'B', text: 'O horizonte de previsão t deve ser sempre um valor fixo;', correct: false },
+      { id: 'C', text: 'O Wang-Mendel é focado em tarefas de classificação e agrupamento;', correct: false },
+      { id: 'D', text: 'As regras são calculadas a cada novo conjunto de dados submetido ao Wang-Mendel.', correct: false },
+      { id: 'E', text: 'Diferentemente de outros algoritmos, o Wang-Mendel não utiliza dados históricos como base;', correct: false },
     ]
   },
   {
@@ -585,10 +585,10 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     topic: 'Segurança e Auditoria',
     answers: [
       { id: 'A', text: 'A segurança da informação tem como base os aspectos denominados de pilares da segurança da informação: confidencialidade, integridade e disponibilidade. Estes aspectos devem refletir diretamente nas políticas de segurança da organização, visando sempre atender aos requisitos impostos por eles.', correct: true, },
-      { id: 'B', text: 'resposta', correct: false, },
-      { id: 'C', text: 'resposta', correct: false, },
-      { id: 'D', text: 'resposta', correct: false, },
-      { id: 'E', text: 'resposta', correct: false, },
+      { id: 'B', text: 'As políticas de segurança normalmente incorporam: a descrição dos computador utilizados nas organizações, quantidade de usuários do sistema, atribuições de cada setor organizacional.', correct: false, },
+      { id: 'C', text: 'As políticas internas de segurança devem tratar de assuntos relacionados à prevenção contra acidentes à informação, não cabendo a ela impor penalidades aos infratores.', correct: false, },
+      { id: 'D', text: 'Os assuntos tratados na ISO 27001 não devem ser utilizados juntos as políticas de segurança.', correct: false, },
+      { id: 'E', text: 'Questões éticas não devem ser tratadas em uma política de segurança organizacional.', correct: false, },
     ],
   },
   {
@@ -619,10 +619,10 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     topic: 'Segurança e Auditoria',
     answers: [
       { id: 'A', text: 'O sinal recebido via rádio e televisão é classificado na modalidade simplex.', correct: true, },
-      { id: 'B', text: 'resposta', correct: false, },
-      { id: 'C', text: 'resposta', correct: false, },
-      { id: 'D', text: 'resposta', correct: false, },
-      { id: 'E', text: 'resposta', correct: false, },
+      { id: 'B', text: 'Os meios de comunicação são classificados entre estas modalidades em virtude de sua capacidade (tamanho da mensagem) de transporte da informação.', correct: false, },
+      { id: 'C', text: 'Nossas comunicações telefônicas são exemplos da modalidade simplex, visto que pode ser realizada via cabo ou rádio.', correct: false, },
+      { id: 'D', text: 'O sinal recebido via rádio e televisão é classificado na modalidade half-duplex.', correct: false, },
+      { id: 'E', text: 'A utilização de um rádio amador é caracterizada como um modo de transmissão full-duplex, onde a comunicação ocorre entre emissor e receptor em apenas um sentido.', correct: false, },
     ],
   },
   {
@@ -632,10 +632,10 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     topic: 'Segurança e Auditoria',
     answers: [
       { id: 'A', text: 'Os Sistemas de Apoio à Decisão (SAD) são os sistemas de informação que auxiliam os gerentes de uma organização a tomar decisões semiestruturadas, com base em dados obtidos dos sistemas de informação gerencial, dos sistemas de processamento de transações e de fontes externas.', correct: true, },
-      { id: 'B', text: 'resposta', correct: false, },
-      { id: 'C', text: 'resposta', correct: false, },
-      { id: 'D', text: 'resposta', correct: false, },
-      { id: 'E', text: 'resposta', correct: false, },
+      { id: 'B', text: 'Os Sistemas de Informação (SI) em cada nível organizacional propõem-se a manter um melhor e mais saudável relacionamento com clientes e fornecedores.', correct: false, },
+      { id: 'C', text: 'Os Sistemas de Informação Gerencial (SIG) sintetizam, registram e relatam os dados pessoais referentes a gerencia da organização.', correct: false, },
+      { id: 'D', text: 'Os Sistemas de Informação executiva (SIE) auxiliam aos executivos a tomar decisões não estruturadas, a partir reuniões semanais com seus colaboradores que tenham acesso a dados internos e externos da organização.', correct: false, },
+      { id: 'E', text: 'Os Sistemas de Processamento de Transações (SPT) executam e registram as entradas de dados relativos a produtos que a organização realiza como parte de seus processos de negócio.', correct: false, },
     ],
   },
   {
@@ -644,11 +644,11 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     `,
     topic: 'Segurança e Auditoria',
     answers: [
-      { id: 'A', text: 'resposta', correct: false, },
-      { id: 'B', text: 'resposta', correct: false, },
+      { id: 'A', text: '1 - Descarte, 2 - Manuseio, 3 – Transporte, 4 - Armazenamento.', correct: false, },
+      { id: 'B', text: '1 - Armazenamento, 2 - Manuseio, 3 – Transporte, 4 - Descarte.', correct: false, },
       { id: 'C', text: '1 - Manuseio, 2 - Armazenamento, 3 – Transporte, 4 - Descarte.', correct: true, },
-      { id: 'D', text: 'resposta', correct: false, },
-      { id: 'E', text: 'resposta', correct: false, },
+      { id: 'D', text: '1 - Manuseio, 2 - Transporte, 3 – Armazenamento, 4 - Descarte.', correct: false, },
+      { id: 'E', text: '1 - Manuseio, 2 - Armazenamento, 3 – Descarte, 4 - Transporte.', correct: false, },
     ],
   },
   {
@@ -744,10 +744,10 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     `,
     topic: 'Segurança e Auditoria',
     answers: [
-      { id: 'A', text: 'resposta', correct: false, },
-      { id: 'B', text: 'resposta', correct: false, },
-      { id: 'C', text: 'resposta', correct: false, },
-      { id: 'D', text: 'resposta', correct: false, },
+      { id: 'A', text: 'Apenas as afirmativas II e IV estão corretas.', correct: false, },
+      { id: 'B', text: 'Apenas a afirmativa III está correta.', correct: false, },
+      { id: 'C', text: 'Apenas as afirmativas I, II e III estão corretas.', correct: false, },
+      { id: 'D', text: 'Apenas as afirmativas I e II estão corretas.', correct: false, },
       { id: 'E', text: 'Todas as afirmativas estão corretas.', correct: true, },
     ],
   },
@@ -757,10 +757,10 @@ Considerando que letras distintas correspondem a algarismos distintos, quantos a
     `,
     topic: 'Segurança e Auditoria',
     answers: [
-      { id: 'A', text: 'resposta', correct: false, },
-      { id: 'B', text: 'resposta', correct: false, },
-      { id: 'C', text: 'resposta', correct: false, },
-      { id: 'D', text: 'resposta', correct: false, },
+      { id: 'A', text: 'Estabelecimento de Regras, Teste e Relatórios.', correct: false, },
+      { id: 'B', text: 'Riscos e controles, Visitas Internas, Visitas Externas, Teste e Relatório.', correct: false, },
+      { id: 'C', text: 'Estabelecimento de Regras, Walkthrough, Papeis de Trabalho e Relatório.', correct: false, },
+      { id: 'D', text: 'Riscos e controles, Walkthrough, Tunelamento.', correct: false, },
       { id: 'E', text: 'Riscos e controles, Walkthrough, Papeis de Trabalho, Teste e Relatório.', correct: true, },
     ],
   },
