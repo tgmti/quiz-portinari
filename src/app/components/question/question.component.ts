@@ -35,6 +35,7 @@ export class QuestionComponent implements OnInit {
 
   loadQuestion() {
     this.loading = true;
+    this.selectedAnswer = '';
     this.$question = this.questionsService.getNextQuestion();
     this.$answers = this.questionsService.getAnswers().pipe(
       tap(answers => this.answersOptions = answers.map(q => ({ value: q.id, label: q.id }))),
@@ -45,11 +46,13 @@ export class QuestionComponent implements OnInit {
   }
 
   async save() {
-    this.loading = true;
-    const question = await this.$question.toPromise();
-    this.questionsService.saveAnswer(question, this.selectedAnswer);
-    this.selectedAnswer = '';
-    this.loadQuestion();
+    if (this.selectedAnswer) {
+      this.loading = true;
+      const question = await this.$question.toPromise();
+      this.questionsService.saveAnswer(question, this.selectedAnswer);
+      this.loading = false;
+      this.loadQuestion();
+    }
   }
 
   results() {
