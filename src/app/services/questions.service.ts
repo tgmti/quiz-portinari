@@ -46,8 +46,15 @@ export class QuestionsService {
       this.activeQuestion.answers : []);
   }
 
-
+  private readonly randomSort = () => Math.random() - Math.random()
   initQuestions() {
-    this.questions = allQuestions.sort(fn => Math.random() - Math.random());
+    const answersIds = ['A','B','C','D','E']
+    this.questions = allQuestions
+      .sort(this.randomSort)
+      .map( (q: QuestionModel) => Object.assign(
+        q, {
+          answers: q.answers.sort(this.randomSort).map( (a, index) => Object.assign( a, {id: answersIds[index]} ) )
+        }
+      ) );
   }
 }
