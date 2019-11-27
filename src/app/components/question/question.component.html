@@ -3,15 +3,21 @@
 
     <h1>{{ ($question | async)?.topic }}</h1>
 
+    <br>
+    <po-button
+      p-label="Salvar"
+      (p-click)="save()">
+    </po-button>
+
     <div class="po-row po-mb-4">
         <po-divider class="po-md-12" p-label="Pergunta"></po-divider>
-        <p> {{ ($question | async)?.question }}</p>
+        <pre class="question"> {{ ($question | async)?.question }}</pre>
     </div>
 
     <div class="po-row po-mb-4">
         <po-divider class="po-md-12" p-label="Opções"></po-divider>
         <div class="po-row po-mb-4" *ngFor="let answer of $answers | async">
-            <p>{{ answer.id }} - {{answer.text}}</p>
+            <pre class="question">{{ answer.id }} - {{answer.text}}</pre>
         </div>
     </div>
     <div class="po-row po-mb-4">
@@ -63,7 +69,6 @@
       [p-items]="$results | async"
     ></po-table>
 
-
 </div>
 
 <po-divider></po-divider>
@@ -84,3 +89,12 @@
   p-label="Reiniciar"
   (p-click)="clear()">
 </po-button>
+
+<div *ngIf="loading">
+
+    <po-loading-overlay
+      [p-screen-lock]="loading"
+      p-text="Salvando...">
+    </po-loading-overlay>
+
+</div>

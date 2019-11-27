@@ -3,7 +3,7 @@ import { PoRadioGroupOption, PoTableColumn } from '@portinari/portinari-ui';
 import { QuestionModel } from 'src/app/models/questions';
 import { QuestionsService } from 'src/app/services/questions.service';
 import { Observable, of } from 'rxjs';
-import { tap, map } from 'rxjs/operators';
+import { tap, map, timeout } from 'rxjs/operators';
 import { AnswerModel } from 'src/app/models/answer';
 
 @Component({
@@ -23,6 +23,7 @@ export class QuestionComponent implements OnInit {
 
   selectedAnswer = '';
   totalPoints = 0;
+  loading = false;
 
   constructor(private questionsService: QuestionsService) {
   }
@@ -33,13 +34,18 @@ export class QuestionComponent implements OnInit {
   }
 
   loadQuestion() {
+    this.loading = true;
     this.$question = this.questionsService.getNextQuestion();
     this.$answers = this.questionsService.getAnswers().pipe(
-      tap(answers => this.answersOptions = answers.map(q => ({ value: q.id, label: q.id })))
+      tap(answers => this.answersOptions = answers.map(q => ({ value: q.id, label: q.id }))),
+      tap( () => window.scrollTo(0, 0) ),
     );
+    setTimeout(() => this.loading = false, 500);
+
   }
 
   async save() {
+    this.loading = true;
     const question = await this.$question.toPromise();
     this.questionsService.saveAnswer(question, this.selectedAnswer);
     this.selectedAnswer = '';
